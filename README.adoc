@@ -1,5 +1,7 @@
 :imagesdir: images
 :figure-caption: Figura
+:toc: Sumário
+:enumered:
 
 = Curso AsciiDoc
 
@@ -27,9 +29,6 @@ http://google.com [Google]
 *Negrito*. _itálico_.
 
 *_Negrito e Itálico_*
-
-:toc: Sumário
-
 
 === Tabelas
 
