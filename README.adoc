@@ -45,6 +45,14 @@ image:evolution-of-man-and-computer.jpg[]
 
 image:evolution-of-man-and-computer.jpg[link=http://google.com] 
 
+image:horizontal-scaling-small.gif[]
+
+=== Vídeo
+
+video::23w-6-N1VKU[youtube, width=640, height=480]
+
+
+
 
 
 
