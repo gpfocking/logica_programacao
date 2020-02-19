@@ -53,8 +53,30 @@ image:horizontal-scaling-small.gif[]
 
 video::23w-6-N1VKU[youtube, width=640, height=480]
 
+=== Código fonte 
 
+//para trechos de código
 
+.Imprimindo com java
+
+[source, java]
+----
+public void funcao(){appendix-caption
+    System.out.println("Olá mundo");
+}
+----
+
+.Calculo do quadrado de um número
+[source, java]
+----
+include::Quadrado.java[]
+----
+
+.Capturando dados do teclado
+[source, java]
+----
+include::Teclado.java[tag=main]
+----
 
 
 
