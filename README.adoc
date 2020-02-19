@@ -1,61 +1,50 @@
-:revealjsdir: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0
-:revealjs_slideNumber: true
-:source-highlighter: highlightjs
-:icons: font
-:allow-uri-read:
-:imagesdir: /images
-:stylesheet: adoc-golo.css
-:numbered:
-:toc: left
-:toc-title: Sumário
-:toclevels: 5
-
-ifdef::env-github[]
-//Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
-
-:caution-caption: :fire:
-:important-caption: :exclamation:
-:note-caption: :paperclip:
-:tip-caption: :bulb:
-:warning-caption: :warning:
-endif::[]
-
-:chapter-label:
-:description: Elaboração de material didático multimídia com AsciiDoc, git e GitHub
-:listing-caption: Listagem
+:imagesdir: images
 :figure-caption: Figura
 
-= Elaboração de material didático multimídia com AsciiDoc, git e GitHub
+= Curso AsciiDoc
 
-== Instalação das ferramentas
+== Comandos Iniciais
 
-Execute o script link:ferramentas.sh[ferramentas.sh] em um terminal com sistema Ubuntu ou qualquer derivado de Debian: 
+- Item 1
+    * Subitem 1A
+    * Subitem 1B
+- Item 2
+    1. Item 1
+    2. Item 2
+    3. Item 3
+- Item 3
 
-[source, bash]
-----
-sh ferramentas.sh
-----
+=== Links
 
-Se sua distribuição for antiga ou não for 64 bits, pode ser que a instalação do Visual Studio code não funcione. Se ocorrer erro, pode editar o script acima, apagar as linhas 3 até 7 e executar novamente. Em seguida, baixe o Visual Studio Code manualmente em http://code.visualstudio.com
+http://google.com
 
-Crie uma conta no GitHub em https://github.com/signup. O nome de usuário se torna o link para sua conta pública, como http://github.com/manoelcampos. Por isso, escolha o nome apropriadamente.
+http://google.com [Google]
 
-Qualquer dúvida, podem entrar em contato diretamente comigo.
-Para qualquer alteração em um projeto que você desejar enviar para o GitHub a partir da sua máquina, você precisará informar nome de usuário e senha. Isso se tornará um processo bastante chato e que toma tempo. Para evitar isso, na nossa máquina pessoal, podemos configurar a autenticação por meio de um par de chaves pública/privada. Para isto, siga o tutorial disponível https://youtu.be/Qp0lDxgoQE0[aqui].
+- link:images/thread-selectors.png
 
-ifdef::backend-pdf[]
-include::comandos/README.adoc[]
-endif::[]
+=== Itálico e negrito
 
-ifndef::backend-pdf[]
-== Comandos AsciiDoc
+*Negrito*. _itálico_.
 
-link:comandos[Um resumo dos comandos AsciiDoc está disponível aqui.]
-endif::[]
+*_Negrito e Itálico_*
 
 
-== Referências
+=== Tabelas
 
-- https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Official Writer’s Guide]
-- https://asciidoctor.org/docs/[Toda a Documentação oficial do AsciiDoc]
-- https://github.com/darshandsoni/asciidoctor-skins[Temas em CSS]
+|===
+|*Coluna A* | *Coluna B* | *Coluna C*
+|_Coluna A_ | _Coluna B_ | _Coluna C_
+|Coluna A | Coluna B | Coluna C 
+3+| Linha
+|===
+
+=== Imagens
+
+.Evolução dos homens e computadores
+image:evolution-of-man-and-computer.jpg[] 
+
+image:evolution-of-man-and-computer.jpg[link=http://google.com] 
+
+
+
+
